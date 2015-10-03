@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Redox - Your Next(Gen) OS</title>
-    <link>http://redox-os.org/</link>
+    <link>http://redox-os.github.io/</link>
     <description>Recent content on Redox - Your Next(Gen) OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Sep 2015 18:11:35 +0200</lastBuildDate>
-    <atom:link href="http://redox-os.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://redox-os.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>And So It Begins…</title>
-      <link>http://redox-os.org/blog/hello-world/</link>
+      <link>http://redox-os.github.io/blog/hello-world/</link>
       <pubDate>Sat, 12 Sep 2015 18:11:35 +0200</pubDate>
       
-      <guid>http://redox-os.org/blog/hello-world/</guid>
+      <guid>http://redox-os.github.io/blog/hello-world/</guid>
       <description>&lt;p&gt;Redox development has been a long and arduous process, spanning several months
 of breaking things until they are fixed.&lt;/p&gt;
 
