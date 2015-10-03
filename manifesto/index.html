@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="/css/redox.css" rel="stylesheet" type="text/css">
+
+
+    <title>Redox - Your Next(Gen) OS</title>
+    <link rel="canonical" href="http://redox-os.github.io/manifesto/">
+    <link href="" rel="alternate" type="application/rss+xml" title="Redox - Your Next(Gen) OS">
+  </head>
+  <body>
+    <div class="topbar">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/blog/">Blog</a></li>
+          
+          <li><a href="https://github.com/redox-os">GitHub</a></li>
+          
+          <li><a href="/manifesto/">Manifesto</a></li>
+          
+        </ul>
+      </nav>
+      <a href="/">
+        <header class="top">
+          <img src="/img/logo.svg" alt="Redox Logo">
+        </header>
+      </a>
+    </div>
+    <div class="content">
+      <h2 class="post-title"><a href="http://redox-os.github.io/manifesto/">Redox way</a></h2>
+      
+
+<p>Idealism, ego, and narcissism are often ingredients constructing
+the not-so-humble OS developer. A short study of Linus Torvalds&rsquo; public comments
+is one of the recommended curriculum when attempting to divine the true
+motivations of someone who would decide to defenestrate other extensively used,
+widely documented, and extremely inexpensive Operating Systems in favor
+of reinventing the wheel (we need more spokes in userspace!).</p>
+
+<p>All that aside, I realize the importance of a project as large as this to define
+some rationale for its existence, and some vision for its future.</p>
+
+<p>To start, perhaps a riddle:</p>
+
+<ul>
+<li>What is black and blue, but never true?</li>
+<li>What is red and green, but cannot be seen?</li>
+<li>What is orange and yellow, but not so mellow?</li>
+</ul>
+
+<p>I don&rsquo;t actually have an answer to that one, so good luck.</p>
+
+<p>There is a question I do have an answer to, though:</p>
+
+<h2 id="what-is-redox:5891c44005928acbbb7fd1868bbfb3f4">What is Redox?</h2>
+
+<p><strong>Redox is an operating system.</strong></p>
+
+<p><strong>Redox is written mostly in Rust</strong>, with a few x86 assembler files in
+the bootloader and protected mode initialization. There is inline assembly
+to deal with system calls, port access, and virtual memory, but it is very
+succinct.</p>
+
+<p><strong>Redox embraces Unix philosophy</strong>, where many interfaces are accessible in
+the virtual filesystem, the binary interface is lightweight and portable,
+and text files are used for configuration.</p>
+
+<p><strong>Redox prioritizes the User.</strong> Safety is the most important innovation of Rust,
+and Redox is attempting to use that innovation to provide a more stable
+and secure experience without compromising user experience. Programs and drivers
+are sandboxed, and the user is left in the highest privilege position.</p>
+
+<p>This page will be updated to further explain the foundational principles of
+Redox, once I have finished writing some code.</p>
+
+    </div>
+    <footer>
+      Copyright &copy; 2015 by <a href="https://github.com/redox-os">Redox Developers</a>
+
+    </footer>
+  </body>
+</html>

@@ -61,5 +61,58 @@ for user programs.&lt;/p&gt;
 </description>
     </item>
     
+    <item>
+      <title>Redox way</title>
+      <link>http://redox-os.github.io/manifesto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redox-os.github.io/manifesto/</guid>
+      <description>
+
+&lt;p&gt;Idealism, ego, and narcissism are often ingredients constructing
+the not-so-humble OS developer. A short study of Linus Torvalds&amp;rsquo; public comments
+is one of the recommended curriculum when attempting to divine the true
+motivations of someone who would decide to defenestrate other extensively used,
+widely documented, and extremely inexpensive Operating Systems in favor
+of reinventing the wheel (we need more spokes in userspace!).&lt;/p&gt;
+
+&lt;p&gt;All that aside, I realize the importance of a project as large as this to define
+some rationale for its existence, and some vision for its future.&lt;/p&gt;
+
+&lt;p&gt;To start, perhaps a riddle:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is black and blue, but never true?&lt;/li&gt;
+&lt;li&gt;What is red and green, but cannot be seen?&lt;/li&gt;
+&lt;li&gt;What is orange and yellow, but not so mellow?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I don&amp;rsquo;t actually have an answer to that one, so good luck.&lt;/p&gt;
+
+&lt;p&gt;There is a question I do have an answer to, though:&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-redox:5891c44005928acbbb7fd1868bbfb3f4&#34;&gt;What is Redox?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Redox is an operating system.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Redox is written mostly in Rust&lt;/strong&gt;, with a few x86 assembler files in
+the bootloader and protected mode initialization. There is inline assembly
+to deal with system calls, port access, and virtual memory, but it is very
+succinct.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Redox embraces Unix philosophy&lt;/strong&gt;, where many interfaces are accessible in
+the virtual filesystem, the binary interface is lightweight and portable,
+and text files are used for configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Redox prioritizes the User.&lt;/strong&gt; Safety is the most important innovation of Rust,
+and Redox is attempting to use that innovation to provide a more stable
+and secure experience without compromising user experience. Programs and drivers
+are sandboxed, and the user is left in the highest privilege position.&lt;/p&gt;
+
+&lt;p&gt;This page will be updated to further explain the foundational principles of
+Redox, once I have finished writing some code.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
