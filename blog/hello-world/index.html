@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="/css/redox.css" rel="stylesheet" type="text/css">
+
+
+    <title>Redox - Your Next(Gen) OS</title>
+    <link rel="canonical" href="http://redox-os.org/blog/hello-world/">
+    <link href="" rel="alternate" type="application/rss+xml" title="Redox - Your Next(Gen) OS">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/blog/">Blog</a></li>
+        
+        <li><a href="http://redox-os.org/redox">Docs</a></li>
+        
+        <li><a href="https://github.com/redox-os">GitHub</a></li>
+        
+      </ul>
+    </nav>
+    <header class="hero">
+      <img src="/img/logo.svg" alt="Redox Logo">
+      <h1>Redox</h1>
+    </header>
+    <div class="content">
+      <h2 class="post-title"><a href="http://redox-os.org/blog/hello-world/">And So It Begins…</a></h2>
+      <p>Redox development has been a long and arduous process, spanning several months
+of breaking things until they are fixed.</p>
+
+<p>On came the compiler errors, which meant the kernel had to be linked as an ELF
+file, because the compiler had moved other functions above the entry function,
+and SSE had to be disabled to prevent aligned memory operations from being done
+on the stack pointer, because the compiler had decided to do that too. Some bugs
+went away after completely unrelated lines of code were changed, which led
+the compiler to make different optimization decisions. Most compiler
+optimizations had to be disabled, and a custom link script used to avoid
+compiler errors.</p>
+
+<p>There was the transition to real hardware, and with it the realization that very
+few virtualization platforms implement the hardware faithfully, and very few
+manufacturer specifications are complete and correct. Sometimes the only
+reference for the &lsquo;correct&rsquo; way of doing things is deep in the Linux source
+code. Often, device drivers would work on Qemu, but not VirtualBox, or on
+VirtualBox, but not real hardware.</p>
+
+<p>Also, there was a discovery of bugs in critical areas, the IDE driver,
+the realloc function, the URL object, the list goes on. Discovery of these
+requires a complete understanding of the Redox source, and an investigation
+of the disassembly of the entire kernel, instruction by instruction. Some bugs
+disappeared when debugging output was added, the side effects of debugging only
+being different timing of instructions.</p>
+
+<p>This blog is to chart the journey of discovery and rediscovery on my path of
+developing Redox, a Rust operating system. Most posts will be about new
+progress, some will be old anecdotes. All will be focused on demonstrating
+the plight of the not-so-humble operating system developer, who is often too far
+buried in principle or ego to discover their mistakes, or to replace them with
+sometimes compromising solutions.</p>
+
+<p>In the end, I hope to develop something that proves that Rust can be
+a full-stack solution, from operating system to device drivers to user
+applications, or fail spectacularly at doing so. What I have made already
+supports some of these goals, with an X11-like windowing system, a VFS based
+filesystem and network stack, and ELF file loading and virtual memory management
+for user programs.</p>
+
+<p>I hope you enjoy this as much as I do,</p>
+
+<p>Jeremy Soller</p>
+
+    </div>
+    <footer>
+      Copyright &copy; 2015 by <a href="https://github.com/redox-os">Redox Developers</a>
+
+    </footer>
+  </body>
+</html>
